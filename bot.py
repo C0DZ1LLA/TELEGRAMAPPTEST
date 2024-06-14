@@ -3,10 +3,8 @@ import random
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
-# Replace 'YOUR_BOT_API_TOKEN' with your actual bot token
-TOKEN = os.getenv('7233069480:AAHOelvXM6ghBjtMDje68ANkIqXNCiZxG7o')
+TOKEN = os.getenv('TOKEN')
 
-# In-memory storage for user data (use a database for production)
 users = {}
 
 def start(update: Update, context: CallbackContext) -> None:
