@@ -3,8 +3,10 @@ import random
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
+# Get the token from environment variables
 TOKEN = os.getenv('TOKEN')
 
+# In-memory storage for user data (use a database for production)
 users = {}
 
 def start(update: Update, context: CallbackContext) -> None:
