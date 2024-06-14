@@ -1,9 +1,10 @@
-from telegram import Update, ForceReply
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+import os
 import random
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Replace 'YOUR_BOT_API_TOKEN' with your actual bot token
-TOKEN = '7233069480:AAHOelvXM6ghBjtMDje68ANkIqXNCiZxG7o'
+TOKEN = os.getenv('7233069480:AAHOelvXM6ghBjtMDje68ANkIqXNCiZxG7o')
 
 # In-memory storage for user data (use a database for production)
 users = {}
